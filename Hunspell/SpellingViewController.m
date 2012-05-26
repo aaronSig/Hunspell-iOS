@@ -7,6 +7,7 @@
 //
 
 #import "SpellingViewController.h"
+#import "SpellingSuggestionDelegate.h"
 
 @interface SpellingViewController ()
 
@@ -20,18 +21,17 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        spellChecker = [[SpellChecker alloc] init];
-        textFieldDelegate = [[SpellCheckTextFieldDelegate alloc] init];
-        textFieldDelegate.delegate = self;
-        textFieldDelegate.spellChecker = spellChecker;
+
     }
     return self;
 }
 
 - (void)viewDidLoad
 {
+    _spellingDelegate = [[SpellingSuggestionDelegate alloc] init];
+    _inputBox.delegate = _spellingDelegate;
+
     [super viewDidLoad];
-    _inputBox.delegate = textFieldDelegate;
 }
 
 - (void)viewDidUnload
@@ -39,6 +39,7 @@
     [self set_textView:nil];
     [self set_spellCheck:nil];
     _wordField = nil;
+    _spellingDelegate = nil;
     [super viewDidUnload];
 }
 
@@ -50,27 +51,15 @@
 #pragma mark buttons
 
 -(IBAction)switchToEnglish:(id)sender {
-    [spellChecker updateLanguage:@"en_GB"];
+    [_spellingDelegate.spellChecker updateLanguage:@"en_GB"];
 }
 
 -(IBAction)switchToIrish:(id)sender {
-    [spellChecker updateLanguage:@"ga_IE"];
+    [_spellingDelegate.spellChecker updateLanguage:@"ga_IE"];
 }
 
-#pragma mark text field delegate
-
-- (void)word:(NSString *)word isSpeltCorrectly:(BOOL)isCorrect{
-    if(isCorrect){
-        _spellCheck.text = @"Correct";
-    }else {
-        _spellCheck.text = @"incorrect";
-    }
+-(IBAction)dropKeyboard:(id)sender {
+    [_inputBox resignFirstResponder]; 
 }
-
-- (void)spellingSuggestions:(NSArray *)suggestions forWord:(NSString *) word{
-    NSString *stringSugggestions = [suggestions componentsJoinedByString:@"\n"];
-    _textView.text = stringSugggestions;
-}
-
 
 @end

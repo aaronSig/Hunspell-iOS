@@ -66,12 +66,15 @@
 		232CEA33153CF47C0083785D /* en_GB.dic in Resources */ = {isa = PBXBuildFile; fileRef = 232CEA2C153CF47C0083785D /* en_GB.dic */; };
 		232CEA34153CF47C0083785D /* README_en_GB.txt in Resources */ = {isa = PBXBuildFile; fileRef = 232CEA2D153CF47C0083785D /* README_en_GB.txt */; };
 		232CEA35153CF47C0083785D /* README_en_GB.txt in Resources */ = {isa = PBXBuildFile; fileRef = 232CEA2D153CF47C0083785D /* README_en_GB.txt */; };
+		232E764B156480BE00A91424 /* SuggestionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 232E764A156480BE00A91424 /* SuggestionBar.m */; };
+		232E764F156481B200A91424 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232E764D1564819C00A91424 /* QuartzCore.framework */; };
+		232E76501564874F00A91424 /* SuggestionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 232E764A156480BE00A91424 /* SuggestionBar.m */; };
 		2340143F153FA27100BF8846 /* ga_IE.aff in Resources */ = {isa = PBXBuildFile; fileRef = 2340143D153FA27100BF8846 /* ga_IE.aff */; };
 		23401440153FA27100BF8846 /* ga_IE.dic in Resources */ = {isa = PBXBuildFile; fileRef = 2340143E153FA27100BF8846 /* ga_IE.dic */; };
 		23444EF4153F635800C8283C /* SpellingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23444EF2153F635800C8283C /* SpellingViewController.m */; };
 		23444EF5153F635800C8283C /* SpellingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23444EF3153F635800C8283C /* SpellingViewController.xib */; };
+		235B12E1157011B600E8F262 /* SpellingSuggestionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 235B12E0157011B600E8F262 /* SpellingSuggestionDelegate.m */; };
 		2364C744155C9B99000E8310 /* HunspellBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2364C743155C9B99000E8310 /* HunspellBridge.mm */; };
-		2364C749155CA2BD000E8310 /* SpellCheckTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364C748155CA2BD000E8310 /* SpellCheckTextFieldDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,15 +147,18 @@
 		232CEA2B153CF47C0083785D /* en_GB.aff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = en_GB.aff; sourceTree = "<group>"; };
 		232CEA2C153CF47C0083785D /* en_GB.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = en_GB.dic; sourceTree = "<group>"; };
 		232CEA2D153CF47C0083785D /* README_en_GB.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README_en_GB.txt; sourceTree = "<group>"; };
+		232E7649156480BE00A91424 /* SuggestionBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionBar.h; sourceTree = "<group>"; };
+		232E764A156480BE00A91424 /* SuggestionBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionBar.m; sourceTree = "<group>"; };
+		232E764D1564819C00A91424 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2340143D153FA27100BF8846 /* ga_IE.aff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ga_IE.aff; sourceTree = "<group>"; };
 		2340143E153FA27100BF8846 /* ga_IE.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ga_IE.dic; sourceTree = "<group>"; };
 		23444EF1153F635800C8283C /* SpellingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpellingViewController.h; sourceTree = "<group>"; };
 		23444EF2153F635800C8283C /* SpellingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpellingViewController.m; sourceTree = "<group>"; };
 		23444EF3153F635800C8283C /* SpellingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpellingViewController.xib; sourceTree = "<group>"; };
+		235B12DF157011B600E8F262 /* SpellingSuggestionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpellingSuggestionDelegate.h; sourceTree = "<group>"; };
+		235B12E0157011B600E8F262 /* SpellingSuggestionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpellingSuggestionDelegate.m; sourceTree = "<group>"; };
 		2364C742155C9B99000E8310 /* HunspellBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HunspellBridge.h; sourceTree = "<group>"; };
 		2364C743155C9B99000E8310 /* HunspellBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HunspellBridge.mm; sourceTree = "<group>"; };
-		2364C747155CA2BD000E8310 /* SpellCheckTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpellCheckTextFieldDelegate.h; sourceTree = "<group>"; };
-		2364C748155CA2BD000E8310 /* SpellCheckTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpellCheckTextFieldDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232E764F156481B200A91424 /* QuartzCore.framework in Frameworks */,
 				232CE965153CDC9A0083785D /* UIKit.framework in Frameworks */,
 				232CE967153CDC9A0083785D /* Foundation.framework in Frameworks */,
 				232CE969153CDC9A0083785D /* CoreGraphics.framework in Frameworks */,
@@ -201,6 +208,7 @@
 		232CE963153CDC9A0083785D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				232E764D1564819C00A91424 /* QuartzCore.framework */,
 				232CE964153CDC9A0083785D /* UIKit.framework */,
 				232CE966153CDC9A0083785D /* Foundation.framework */,
 				232CE968153CDC9A0083785D /* CoreGraphics.framework */,
@@ -217,8 +225,7 @@
 				23444EF1153F635800C8283C /* SpellingViewController.h */,
 				23444EF2153F635800C8283C /* SpellingViewController.m */,
 				23444EF3153F635800C8283C /* SpellingViewController.xib */,
-				2364C747155CA2BD000E8310 /* SpellCheckTextFieldDelegate.h */,
-				2364C748155CA2BD000E8310 /* SpellCheckTextFieldDelegate.m */,
+				235B12DD157010DC00E8F262 /* UI Elements */,
 				2364C746155CA1F0000E8310 /* Hunspell Engine */,
 				232CE96B153CDC9A0083785D /* Supporting Files */,
 			);
@@ -326,6 +333,17 @@
 				2340143E153FA27100BF8846 /* ga_IE.dic */,
 			);
 			name = en_IE;
+			sourceTree = "<group>";
+		};
+		235B12DD157010DC00E8F262 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				235B12DF157011B600E8F262 /* SpellingSuggestionDelegate.h */,
+				235B12E0157011B600E8F262 /* SpellingSuggestionDelegate.m */,
+				232E7649156480BE00A91424 /* SuggestionBar.h */,
+				232E764A156480BE00A91424 /* SuggestionBar.m */,
+			);
+			name = "UI Elements";
 			sourceTree = "<group>";
 		};
 		2364C746155CA1F0000E8310 /* Hunspell Engine */ = {
@@ -489,7 +507,8 @@
 				232CEA24153CF2180083785D /* SpellChecker.mm in Sources */,
 				23444EF4153F635800C8283C /* SpellingViewController.m in Sources */,
 				2364C744155C9B99000E8310 /* HunspellBridge.mm in Sources */,
-				2364C749155CA2BD000E8310 /* SpellCheckTextFieldDelegate.m in Sources */,
+				232E76501564874F00A91424 /* SuggestionBar.m in Sources */,
+				235B12E1157011B600E8F262 /* SpellingSuggestionDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +529,7 @@
 				232CEA15153CDE1F0083785D /* replist.mm in Sources */,
 				232CEA17153CDE1F0083785D /* suggestmgr.mm in Sources */,
 				232CEA25153CF2180083785D /* SpellChecker.mm in Sources */,
+				232E764B156480BE00A91424 /* SuggestionBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,13 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SpellChecker.h"
-#import "SpellCheckTextFieldDelegate.h"
+#import "SpellingSuggestionDelegate.h"
 
-@interface SpellingViewController : UIViewController <SpellCheckTextFieldDelegateDelegate> {
-    SpellChecker *spellChecker;
-    SpellCheckTextFieldDelegate *textFieldDelegate;
-
+@interface SpellingViewController : UIViewController {
+    SpellingSuggestionDelegate *_spellingDelegate;
+    
     IBOutlet UILabel *_wordField;
     IBOutlet UITextField *_inputBox;    
 }
@@ -23,5 +21,6 @@
 
 -(IBAction)switchToEnglish:(id)sender;
 -(IBAction)switchToIrish:(id)sender;
+-(IBAction)dropKeyboard:(id)sender;
 
 @end
