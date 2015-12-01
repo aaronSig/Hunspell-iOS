@@ -50,12 +50,16 @@
 
 #pragma mark buttons
 
+// note that dictionaries are loaded on top of each other. Loading en_GB and ga_IE will load both into memory
+
 -(IBAction)switchToEnglish:(id)sender {
     [_spellingDelegate.spellChecker updateLanguage:@"en_GB"];
+    _inputBox.enabled = YES;
 }
 
 -(IBAction)switchToIrish:(id)sender {
     [_spellingDelegate.spellChecker updateLanguage:@"ga_IE"];
+    _inputBox.enabled = YES;
 }
 
 -(IBAction)dropKeyboard:(id)sender {

@@ -96,7 +96,7 @@ dispatch_queue_t suggestionsQueue;
         return YES;    
     }
     
-    dispatch_async(dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSString *word = [self findWordBeingTyped];
         [self word: word isSpeltCorrectly: [spellChecker isSpeltCorrectly:word]];
         dispatch_async(suggestionsQueue, ^{

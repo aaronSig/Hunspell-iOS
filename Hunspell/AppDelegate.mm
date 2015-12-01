@@ -19,7 +19,7 @@
     // Override point for customization after application launch.
     
     controller = [[SpellingViewController alloc] initWithNibName:@"SpellingViewController" bundle:[NSBundle mainBundle]];
-    [self.window addSubview:controller.view];
+    self.window.rootViewController = controller;
     
     [self.window makeKeyAndVisible];
     return YES;
